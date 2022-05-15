@@ -1,0 +1,81 @@
+/* Default Styling */
+body {
+    margin: 0.5rem;
+    background-color: #93b8d7;
+    color: white;
+}
+nav a{
+    color: white;
+    font-size: 2.5em;
+    padding-right: 0.5em;
+}
+#social-links {
+    display: none;
+}
+main {
+    text-align: center;
+    font-family: "Kaushan Script", fantasy;
+    margin-top: 23vh;
+}
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 2rem;
+    margin-top: 2em;
+}
+footer {
+    display: none;
+}
+/* Styling for width >= 598px */
+@media (min-width: 598px)
+{
+    #hamburger-menu {
+        display: none;
+    }
+    #social-links {
+        display: block;
+    }
+}
+/* Styling for width >= 768px */
+@media (min-width: 768px)
+{
+    body{
+        background-image: url('../img/splash-md.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+    html{
+        height: 100%;
+    }
+    footer {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+    } /* Taken from: w3schools.com/cssref/pr_pos_bottom.asp */
+    main {
+        text-shadow: #153c43 1px 1px 1px;
+    }
+}
+/* Styling for width >= 992px */
+@media (min-width: 992px){
+    body{
+        background-image: url('../img/splash-lg.jpg');
+    }
+    nav a{
+        font-size: 1.5rem;
+    }
+    h1 {
+        font-size: 5rem;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+}
+/* Styling for width >= 1200px */
+@media (min-width: 1200px){
+    body{
+        background-image: url('../img/splash-xl.jpg');
+    }
+}
